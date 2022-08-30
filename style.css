@@ -1,0 +1,692 @@
+*{
+    font-family: 'Montserrat';
+    margin: 0px auto;
+    padding: 0px;
+}
+.hover{
+    display: none;
+}
+.TtlBacg, .TtlBacg2{
+    position: absolute;
+    width: 100%;
+    height: 1024px;
+    background-image: url(img/bg.png) ;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.arowLeft, .arowRight{
+    cursor: pointer;
+    position: absolute;
+    top: 456px;
+    width: 62px;
+    height:63px ;
+    border: 1px solid;
+    border-color: rgba(114, 147, 255, 0.459);
+    border-radius: 50%;
+}
+.arowRight{
+    right: 0px;
+}
+.arowLeft:hover{
+    background: linear-gradient(rgba(96, 192, 188, 1),
+    rgba(78, 181, 231, 1),
+    rgba(118, 98, 167, 0));
+    transition: 0.75s;
+}
+.arowRight:hover{
+    background: linear-gradient(rgba(96, 192, 188, 1),
+    rgba(78, 181, 231, 1),
+    rgba(118, 98, 167, 0));
+    transition: 0.75s;
+}
+#arowLeft, #arowRght{
+    padding: 25px 25px;
+}
+
+
+
+.wrap{
+    width: 1860px;
+    margin: 0px auto;
+}
+/*  HEADER  */
+header{
+    position: relative;
+    height: 170px;
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    align-items: center;
+}
+/*  Burger */
+.burger{
+    display: none;
+    background-color: rgba(255, 255, 255, 0.09);
+    padding: 18px 14px;
+    border-radius: 25px;
+}
+.burgElem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+    position: absolute;
+    background-color: rgba(34, 34, 36, 0.75);
+    width: 388px;
+    position: absolute;
+    top: 15%;
+    left: 30%;
+}
+/*  BurgerEnd  */
+/*  basket  */
+.basketBlck{
+    width: 44px;
+    height:44px ;
+    display: flex;
+    position: relative;
+}
+.basket{
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 30px;
+    margin-top: 13px;
+}
+.numOfBuy{
+    position: absolute;
+    background-color: rgba(78, 180, 230, 1);
+    border-radius: 50%;
+    width: 22px;
+    height:22px ;
+    text-align: center;
+    padding-top: 3px ;
+    transition: 1s;
+    right: 0px;
+}
+.basketBuy{
+    position: absolute;
+    top: 156px;
+    right: 5%;
+    transition: 1s;
+}
+.basketActive{
+    width: 56px;
+    height: 56px;
+    border-color:rgba(78, 181, 231, 1);
+    background-color: rgba(78, 181, 231, 0.48);
+    border-radius: 50%;
+    transition: 0.2s;
+}
+/*  SOCmEDIA  */
+.social{
+    display: flex;
+}
+.socItm{
+    width: 56px;
+    height: 56px;
+    background:gray;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 25px;
+    cursor: pointer;
+    
+}
+.socItm:hover{
+    background-color: rgba(125, 216, 252, 0.75);
+}
+/*  HeaderLogo  */
+.headLogo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.AftLog{
+    margin-bottom: 45px;
+    margin-top: 10px;
+    text-align: center;
+}
+nav{
+    display: flex;
+    list-style-type: none;
+    cursor: pointer;
+}
+.star{
+    margin: 0px 58px ;
+}
+.listIt{
+    font-size: 16px;
+}
+.listIt:last-child{
+    margin-right: 0px;
+}
+/*contacts*/
+.contct{
+    display: flex;
+    align-items: center;
+    height: 170px;
+}
+.Numb{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold ;
+    margin-left: 25px;
+    margin-right: 85px;
+}
+.Numb:hover{
+    text-decoration: underline;
+}
+.phoneSVG, .basket{
+    cursor: pointer;
+}
+/*  Header End  */
+/*  AFTHEAD  */
+.afterHeader, .afterHeader2{
+    position: relative;
+    display: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 150px;
+    margin-bottom: 463px;
+}
+.mainTTL{
+    font-size: 55px;
+    color: #fff;
+    text-align: center;
+}
+.blue{
+    color: rgba(176, 229, 255, 1);
+}
+.MnTtlAft{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    margin: 35px 59px 0px 0px ;
+}
+.takeBtn{
+    margin: 73px 60px 0px 0px ;
+    background: linear-gradient(
+        rgba(96, 192, 188, 1),
+        rgba(78, 181, 231, 1),
+        rgba(118, 98, 167, 1)
+        );
+    border-radius: 3px;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 33px;
+}
+.takeBtn:hover{
+    font-size: 18px;
+}
+/*  TTlBACG2  */
+.TtlBacg2{
+    width: 100%;
+    display: inline-block;
+    background-image: url(img/bg2.png);
+    height: 1024px;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: 2s;
+}
+/*  basket  */
+
+.basketBuy{
+    width: 500px;
+    height: 832px;
+    background-color: #fff;
+    color: black;
+    display: block;
+    border-radius: 10px;
+}
+.buskTtl{
+    text-align: center;
+    margin-bottom: 30px;
+    margin-top: 15px;
+    font-size: 20px;
+    color: rgba(30, 40, 45, 1);
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.MalingBuy{
+    max-height: 500px;
+    overflow: scroll;
+    margin-bottom: 46px;
+    margin-top: 17px;
+}
+
+.basketBtn{
+    padding: 15px 20px;
+    border: 1px solid;
+    border-color: rgba(114, 147, 255, 0.459);
+    text-decoration: none;
+    color: black;
+    margin-left: 12px;
+}
+.basketBtn:last-child{
+    color: #fff;
+    background: linear-gradient(
+        rgba(96, 192, 188, 1),
+        rgba(78, 181, 231, 1),
+        rgba(118, 98, 167, 1)
+        );
+}
+.freeCourier{
+    background-color: rgba(226, 234, 239, 1);
+    width: 500px;
+    height: 120px;
+    margin-top: 50px;
+}
+.busWrapper{
+    width: 60px;
+    height:60px ;
+    background-color: #fff;
+    position: relative;
+    border-radius: 50%;
+}
+.bus{
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 18px;
+    margin-top: 10px;
+    position: absolute;
+}
+/*  BuyBasketBlock  */
+.costUnderline{
+    text-decoration: line-through;
+}
+.realCost, .realCostinbusket{
+    font-size: 30px;
+    color: #4EB4E6;
+}
+.realCostinbusket{
+    margin-right: 53px;
+    margin-left: 30px;
+}
+.sum{
+    text-align: center;
+    font-size: 21px;
+    color: #4EB4E6;
+    margin-left: 158px;
+}
+.buyBtn{
+    margin-left: 30px;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 119px;
+    background: linear-gradient(
+    rgba(96, 192, 188, 1),
+    rgba(78, 181, 231, 1),
+    rgba(118, 98, 167, 1)
+    ) ;
+    border-radius: 4px;
+    margin-top: 260px;
+}
+/*  basketEnd  */
+.hover{
+    display: none;
+}
+.fixed{
+    width: 97%;
+    position: fixed;
+    top: 15px;
+}
+.animationYes{
+    animation-name: yes;
+    animation-duration: 2s;
+}
+.animationNo{
+    animation-name: no;
+    animation-duration: 2s;
+}
+/*shopElem*/
+.mainTTl{
+    text-align: center;
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+.mainNavList{
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+.MainNavItem{
+    width: 260px;
+    height: 70px;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 37px;
+    position: relative;
+    background-color: rgba(226, 234, 239, 1);
+}
+.active{
+    background-color: rgba(78, 180, 230, 0.8)
+}
+.MainNavItem:first-child{
+    margin-left: 0px;
+}
+.MainNavItem:hover{
+    background-color: rgba(78, 180, 230, 0.8);
+}
+.mainNavLink{
+    text-decoration: none;
+    color: rgba(30, 40, 45, 1);
+    margin-bottom: 19px;
+}
+.materialClass{
+    margin-left: 40px;
+    margin-top: 24px;
+}
+.nameOfMaterial{
+    display: inline-block;
+    margin-left: 17px;
+    font-size: 16px;
+    color: rgba(30, 40, 45, 1);
+}
+/*ProductCeys*/
+.produkt{
+    margin-left: 140px;
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 473px 473px 473px ;
+    grid-gap: 15px 19px;
+}
+.productBlock{
+    width: 473px;
+    height: 959px;
+    position: relative;
+}
+
+.polic{
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+}
+
+.policTtl{
+    font-size: 14px;
+}
+
+.endP{
+    font-size: 18px;
+    background-color: rgba(185, 217, 233, 1);
+    padding: 13px 0px;
+    text-align: center;
+}
+
+.NameProduct{
+    font-size: 24px;
+    text-align: center;
+    margin-top: 26px;
+    margin-bottom: 13px;
+}
+
+.prodType{
+    list-style-type: none;
+    display: flex;
+}
+.ProdTypeEl{
+    margin-top: 13px;
+    margin-bottom: 20px;
+}
+.prodLink:hover{
+    background-color: rgba(78, 180, 230, 1);
+}
+.prodLink{
+    font-size: 13px;
+    text-decoration: none;
+    color: black;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 16px 23px;
+    border: 1px solid;
+    border-color: rgba(78, 180, 230, 1);
+}
+.photoinProductBlock{
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+/*  button i need more  */
+
+.INeedMoreProduct{
+    font-size: 18px;
+    color: rgba(30, 40, 45, 1);
+    border-color: rgba(78, 180, 230, 1);
+    background-color: #fff;
+    padding: 10px 50px;
+    border-radius: 6px;
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 61px;
+    margin-bottom: 121px;
+    cursor: pointer;
+}
+
+
+/*  FORuSbLOCK  */
+
+.forUS{
+    background-image: url(img/bgend.png);
+    padding-bottom: 100px;
+}
+.forUsTtl{
+    text-align: center;
+    font-size: 45px;
+    color: #fff;
+    margin-bottom: 27px;
+    padding-top: 84px;
+}
+.forUsBlck{
+    display: flex;
+    width: 1449px;
+    margin: 0px auto;
+}
+.forUSBlockItem{
+    border-radius: 9px;
+    color: #fff;
+    background-color:rgba(9, 24, 30, 0.59);
+    width: 473px;
+    height: 446px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.imgBlck{
+    margin-top: 54px;
+    background-color: rgba(255, 255, 255, 0.07);
+    border-radius: 50%;
+    border: 1px solid;
+    border-color: rgba(96, 192, 188, 1);
+    width: 155px;
+    height:155px ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.AftImgBlck{
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 290px;
+    font-size: 24px;
+    text-align: center;
+}
+.ForUsParagraph{
+    font-size: 18px;
+    width: 375px;
+    text-align: center;
+}
+
+
+/* styles for basket */
+
+.btnBuyActive{
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 119px;
+    background: linear-gradient(
+    rgba(96, 192, 188, 1),
+    rgba(78, 181, 231, 1),
+    rgba(118, 98, 167, 1)
+    ) ;
+    border-radius: 4px;
+    margin-top: 60px;
+}
+
+.heightBlock{
+    height: 200px;
+}
+.imgForBuyBlock{
+    width: 147px;
+    height:147px ;
+    float: left;
+    margin-left: 15px;
+    border-radius: 10px;
+}
+.margin{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    font-size: 18px;
+    text-align: end;
+}
+
+.blockBtns{
+    display: flex;
+    align-items: center;
+    width: 180px;
+    height: 35px;
+    background-color: #E2EAEF;
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 4px;
+}
+.countBtn{
+    width: 25px;
+    height: 25px;
+    border: 0px;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.deleteBtn{
+    width: 200px;
+    height: 25px;
+    border: 0px;
+    background-color: #E2EAEF;
+    color: black;
+    padding: 5px;
+    margin-top: 20px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+@keyframes yes{
+    0%{
+        opacity: 0.45;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes no{
+    0%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0.45;
+    }
+}
+@media (max-width: 1880px){
+    .wrap{
+        width: 95%;
+    }
+}
+@media (max-width: 1440px){
+    .star{
+        margin: 0px 25px ;
+    }
+    .wrap{
+        width: 95%;
+    }
+}
+@media (max-width:1240px){
+    .burger{
+        display: block;
+    }
+    .burgTtl{
+        text-align: center;
+        font-size: 24px;
+        margin-bottom: 36px;
+        padding-top: 35px;
+    }
+    .BurgTtlAft{
+        font-size: 17px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 15px;
+    }
+    .burgElem>nav>.listIt{
+        margin-top: 15px;
+        margin-bottom: 15px;
+    }
+    .Numbburg{
+        color: #fff;
+        text-decoration: none;
+        display: flex;
+        justify-content: center;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .burgElem>nav{
+        flex-direction: column;
+        align-items: center;
+    }
+    .listIt{
+        margin-right: 0px;
+        margin-left: 0px;
+    }
+    .star{
+        width: 19px;
+        height:19px ;
+    }
+    .headLogo>nav{
+        display: none;
+    }
+    .burgElem>.phoneSVG{
+        background-color: #fff;
+        display: block;
+        padding: 10px;
+        border-radius: 50%;
+    }
+    .socialBurg{
+        display: flex;
+        justify-content: space-around;
+    }
+    .burgElem>.socialImg{
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .wrap{
+        width: 95%;
+    }
+    .social,
+    .phoneSVG,
+    .Numb,
+    .arowLeft,
+    .arowRight{
+        display: none;
+    }
+    .afterHeader{
+        width: 80%;
+        margin-top: 115px;
+    }
+    .MnTtlAft,
+    .takeBtn{
+        margin-right: 0px;
+    }
+}
