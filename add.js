@@ -131,10 +131,6 @@ window.addEventListener('DOMContentLoaded', function(){
             costBasket.appendChild(costReal);
             costBasket.classList.add('margin')
 
-
-
-
-
             const hr = document.createElement('hr');
             let BtnBlock = document.createElement('div');
             let numBlock = document.createElement('div');
@@ -159,7 +155,7 @@ window.addEventListener('DOMContentLoaded', function(){
             titleOfBasket.textContent = ttl.textContent;
             titleOfBasket.classList.add('margin');
 
-//////
+
             BtnBlock.classList.add('blockBtns');
             numBlock.classList.add('ProductsCount');
             numBlock.id = 'countNumber'
@@ -216,16 +212,6 @@ window.addEventListener('DOMContentLoaded', function(){
                   sumResult.innerHTML = String(TotalCost) + 'грн'
               });  
 
-              if(e.target.classList== 'deleteBtn'){
-                let realCost = document.querySelectorAll('.realCostinbusket');
-              let TotalCost = 0
-      
-              // рабочий код
-              realCost.forEach(function(costs){
-                  TotalCost += (Number(costs.innerHTML) * Number(costs.parentNode.nextSibling.childNodes[1].innerHTML))
-                  sumResult.innerHTML = String(TotalCost) + 'грн'
-              }); 
-              }
         }
     });
 
@@ -251,6 +237,7 @@ window.addEventListener('DOMContentLoaded', function(){
                     p.querySelector('.buyBtn').innerHTML = 'Купить со скидкой'
                 } 
             })
+            
         }
 
     })
@@ -297,5 +284,25 @@ window.addEventListener('DOMContentLoaded', function(){
               });
         
      } 
+
+     let  deleteButtons = document.querySelectorAll('.deleteBtn');
+
+     document.addEventListener('click', function(elem){
+        if(elem.target.classList== 'deleteBtn'){
+            let realCost = document.querySelectorAll('.realCostinbusket');
+              let TotalCost = 0
+
+              if(deleteButtons.length = 1){
+                document.querySelector('.sum').innerHTML = '0 грн'
+                console.log(3)
+            } 
+      
+              // рабочий код
+              realCost.forEach(function(costs){
+                  TotalCost += (Number(costs.innerHTML) * Number(costs.parentNode.nextSibling.childNodes[1].innerHTML))
+                  sumResult.innerHTML = String(TotalCost) + 'грн'
+              });  
+        }
+     })
  })
 
