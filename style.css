@@ -3,6 +3,15 @@
     margin: 0px auto;
     padding: 0px;
 }
+.poupMenu{
+    border: 1px;
+    border-color: #4EB4E6;
+    align-items: center;
+    margin-left: 50px;
+    width: 442px;
+    height: 60px;
+    color: rgba(72, 84, 90, 1);
+}
 .hover{
     display: none;
 }
@@ -25,8 +34,19 @@
     border-color: rgba(114, 147, 255, 0.459);
     border-radius: 50%;
 }
+#arowRght:hover{
+    background: linear-gradient(rgba(96, 192, 188, 1),
+    rgba(78, 181, 231, 1),
+    rgba(118, 98, 167, 0));
+    transition: 0.75s;
+    border-radius: 50%;
+}
 .arowRight{
     right: 0px;
+}
+.star{
+    width: 9px;
+    height:9px ;
 }
 .arowLeft:hover{
     background: linear-gradient(rgba(96, 192, 188, 1),
@@ -197,9 +217,11 @@ nav{
     font-size: 55px;
     color: #fff;
     text-align: center;
+    margin-bottom: 30px;
+    margin-top: -38px;
 }
 .blue{
-    color: rgba(176, 229, 255, 1);
+    color: rgb(176, 229, 255, 1);
 }
 .MnTtlAft{
     color: #fff;
@@ -220,7 +242,11 @@ nav{
     padding: 14px 33px;
 }
 .takeBtn:hover{
-    font-size: 18px;
+    background: linear-gradient(
+        rgba(96, 192, 188, 0.90),
+        rgba(78, 181, 231, 0.90),
+        rgba(118, 98, 167, 0.90)
+        );
 }
 /*  TTlBACG2  */
 .TtlBacg2{
@@ -257,8 +283,13 @@ nav{
     margin-bottom: 46px;
     margin-top: 17px;
 }
-
+.BtnBuyWrapper{
+    display: flex;
+    position: absolute;
+    top: 627px;
+}
 .basketBtn{
+    border-radius: 6px;
     padding: 15px 20px;
     border: 1px solid;
     border-color: rgba(114, 147, 255, 0.459);
@@ -274,11 +305,22 @@ nav{
         rgba(118, 98, 167, 1)
         );
 }
+.basketBtn:hover{
+    background-color: #4EB4E6;
+    border-radius: 20px;
+}
 .freeCourier{
     background-color: rgba(226, 234, 239, 1);
     width: 500px;
     height: 120px;
-    margin-top: 50px;
+    top: 701px;
+    position: absolute;
+}
+.freeDelivery{
+    margin: 15px 30px 0px 156px;
+    width: 290px;
+    height: 41px;
+    font-size: 22px;
 }
 .busWrapper{
     width: 60px;
@@ -297,10 +339,14 @@ nav{
 /*  BuyBasketBlock  */
 .costUnderline{
     text-decoration: line-through;
+    margin-left: 161px;
+    font-size: 20px;
 }
 .realCost, .realCostinbusket{
     font-size: 30px;
+    margin-left: 20px;
     color: #4EB4E6;
+    text-align: center;
 }
 .realCostinbusket{
     margin-right: 53px;
@@ -313,6 +359,7 @@ nav{
     margin-left: 158px;
 }
 .buyBtn{
+    display: block;
     margin-left: 30px;
     color: #fff;
     text-decoration: none;
@@ -323,7 +370,9 @@ nav{
     rgba(118, 98, 167, 1)
     ) ;
     border-radius: 4px;
-    margin-top: 260px;
+}
+.margin>.costUnderline{
+    margin-left: 15px;
 }
 /*  basketEnd  */
 .hover{
@@ -352,6 +401,7 @@ nav{
     display: flex;
     list-style-type: none;
     justify-content: space-between;
+    margin-top: 42px;
 }
 .MainNavItem{
     width: 260px;
@@ -473,6 +523,9 @@ nav{
 .forUS{
     background-image: url(img/bgend.png);
     padding-bottom: 100px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .forUsTtl{
     text-align: center;
@@ -520,10 +573,24 @@ nav{
     width: 375px;
     text-align: center;
 }
+/**/
+.reviews{
+    height: 200px;
+}
+.poupWrap{
+    display: flex;
+    flex-direction: column;
+}
 
-
+.poopImg{
+    margin: 0px 20px;
+    width: 40px;
+    height: 40px;
+}
+.hover{
+    display: none;
+}
 /* styles for basket */
-
 .btnBuyActive{
     color: #fff;
     text-decoration: none;
@@ -536,7 +603,6 @@ nav{
     border-radius: 4px;
     margin-top: 60px;
 }
-
 .heightBlock{
     height: 200px;
 }
@@ -554,7 +620,6 @@ nav{
     font-size: 18px;
     text-align: end;
 }
-
 .blockBtns{
     display: flex;
     align-items: center;
@@ -584,6 +649,46 @@ nav{
     margin-left: 50px;
     cursor: pointer;
 }
+footer{
+    color: #fff;
+    display: flex;
+    justify-content: space;
+    height: 246px;
+    background-color:rgba(5, 20, 26, 1);
+}
+.contactsWrap{
+    padding-top: 54px;
+    width: 218px;
+    display: flex;
+    flex-direction: column;
+}
+footer>nav{
+    padding-top: 79px;
+    width: 520px;
+}
+footer>nav>li{
+    width: 100px;
+}
+.contactsFooter{
+    padding-top: 44px;
+    font-size: 16px;
+    height: 153px;
+}
+.footTitle{
+    color: rgba(255, 255, 255, 1);
+    margin-bottom: 23px;
+}
+.contactsFooterWrapp{
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 24px;
+}
+.contactsFooterWrapp>.phoneSVG{
+    margin-right: 26px;
+    margin-left: 0px;
+}
+
+
 @keyframes yes{
     0%{
         opacity: 0.45;
@@ -605,6 +710,57 @@ nav{
     .wrap{
         width: 95%;
     }
+    .mainNavList {
+    width: 95%;
+}
+.produkt{
+    margin: 50px auto;
+    width: 95%;
+}
+
+}
+
+@media (max-width: 1550px){
+    .mainNavList {
+        width: 95%;
+        flex-wrap: wrap;
+    }
+    .MainNavItem{
+        margin-top: 10px;
+        align-self: center;
+    }
+    .produkt{
+        width: 95%;
+        margin-left: 0px;
+        grid: 5px;
+    }
+    .productBlock {
+    width: 80%;
+    height: 959px;
+    position: relative;
+}
+    .prodImg{
+        width: 100%;
+    }
+    .prodType {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ProdTypeEl {
+        margin-top: 27px;
+    }
+    .buyBtn {
+    text-align: center;
+    font-size: 17px;
+    display: block;
+    margin-left: 30px;
+    color: #fff;
+    text-decoration: none;
+    padding: 22px 40px;
+    background: linear-gradient( rgba(96, 192, 188, 1), rgba(78, 181, 231, 1), rgba(118, 98, 167, 1) );
+    border-radius: 4px;
+}
 }
 @media (max-width: 1440px){
     .star{
@@ -613,8 +769,72 @@ nav{
     .wrap{
         width: 95%;
     }
+    .mainNavList {
+        width: 95%;
+        flex-wrap: wrap;
+    }
+    .MainNavItem{
+        margin-top: 10px;
+        align-self: center;
+    }
+    .produkt{
+        margin-left: 15px;
+        grid-column: auto;
+        width: 95%;
+        margin-left: 0px;
+        grid-template-columns: 380px 380px 380px;
+    }
+    .productBlock {
+    width: 80%;
+    height: 959px;
+    position: relative;
+}
+    .prodImg{
+        width: 100%;
+    }
+    .prodType {
+        list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ProdTypeEl {
+        margin-top: 27px;
+    }
+    .buyBtn {
+    text-align: center;
+    font-size: 17px;
+    display: block;
+    margin-left: 30px;
+    color: #fff;
+    text-decoration: none;
+    padding: 22px 40px;
+    background: linear-gradient( rgba(96, 192, 188, 1), rgba(78, 181, 231, 1), rgba(118, 98, 167, 1) );
+    border-radius: 4px;
+}
+.forUsBlck {
+    display: flex;
+    width: 95%;
+    margin: 0px auto;
+}
 }
 @media (max-width:1240px){
+    .produkt{
+        margin-left: 5%;
+        grid-template-columns: 478px 478px;
+    }
+    .forUsBlck{
+        flex-wrap: wrap;
+    }
+    .forUSBlockItem{
+        width: 400px;
+        margin-top: 20px;
+    }
+    .forUsTtl{
+        font-size: 40px;
+    }
+    .mainNavList {
+        flex-wrap: wrap;
+    }
     .burger{
         display: block;
     }
@@ -688,5 +908,115 @@ nav{
     .MnTtlAft,
     .takeBtn{
         margin-right: 0px;
+    }
+}
+@media (max-width: 1028px){
+    .produkt{
+        margin-left: 1%;
+    }
+}
+@media (max-width: 980px){
+    .produkt{
+        margin-left: 1%;
+        display: flex;
+        flex-direction: column;
+    }
+    .productBlock{
+        margin-bottom: 215px;
+    }
+}
+@media (max-width: 779px){
+    .productBlock{
+        margin-bottom: 150px;
+    }
+    .produkt{
+        grid-template-columns: 565px;
+        margin-left: 1%;
+    }
+    .mainTTl{
+        margin-top: -100px;
+    }
+}
+@media (max-width: 556px){
+    .wrap{
+        width: 100%;
+    }
+    .produkt{
+        grid-template-columns: 95%;
+        margin-left: 1%;
+    }
+    .productBlock {
+        width: 80%;
+        height: 786px;
+        position: relative;
+    }
+    .basketBuy{
+        margin: 0 auto;
+        width: 95%;
+        left: 12px;
+    }
+    .heightBlock {
+    height: 229px;
+}
+.deleteBtn {
+    margin-left: 212px;
+}
+.sum {
+    margin-left: 111px;
+}
+.basketBtn{
+    font-size: 14px;
+}
+    .freeCourier{
+        width: 100%;
+    }
+    .mainTTL {
+        font-size: 47px;
+        color: #fff;
+        text-align: center;
+        margin-bottom: 30px;
+        margin-top: -38px;
+        text-align: left;
+    }
+    .realCost, .realCostinbusket {
+    font-size: 30px;
+    margin-left: 20px;
+    color: #4EB4E6;
+    text-align: center;
+    display: block;
+}
+    .buyBtn {
+        margin: 0px;
+    }
+}
+@media (max-width: 450px){
+    .mainTTL {
+        font-size: 33px;
+    }
+    .takeBtn {
+    font-size: 13px;
+    padding: 14px 13px;
+    }
+    .produkt{
+        grid-template-columns: 99%;
+        margin-left: 2%;
+    }
+    .productBlock {
+        margin-bottom: 42%;;
+    }
+    .forUsTtl {
+        font-size: 33px;
+    }
+    .forUsBlck {
+    width: 277px;
+    flex-wrap: wrap;
+    }
+    .forUSBlockItem {
+        width: 300px;
+        margin-top: 20px;
+    }
+    .ForUsParagraph{
+        font-size: 16px;
+        width: 216px;
     }
 }
